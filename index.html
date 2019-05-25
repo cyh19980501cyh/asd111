@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/index.css">
+</head>
+
+<body>
+
+    <div id="box">
+        <div class="head">
+            <div class="nav"></div>
+            <div class="ban"></div>
+            <div class="dldtdd">
+                <dl>
+                    <dt></dt>
+                    <dd>华人金融</dd>
+                </dl>
+
+                <dl>
+                    <dt></dt>
+                    <dd>华人金融</dd>
+                </dl>
+
+                <dl>
+                    <dt></dt>
+                    <dd>华人金融</dd>
+                </dl>
+
+                <dl>
+                    <dt></dt>
+                    <dd>华人金融</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="aa"> <canvas id="c" width="120" height="120"></canvas></div>
+            <div class="bb">
+                <canvas id="a" width="120" height="120"></canvas>
+            </div>
+        </div>
+        <div class="foot">
+            <span>icon</span>
+            <span>icon</span>
+            <span>icon</span>
+            <span>icon</span>
+        </div>
+
+    </div>
+    <script src="./js/flexible.js"></script>
+    <script>
+        var c = document.getElementById('c');
+        var context = c.getContext('2d');
+        context.beginPath();
+        context.arc(60, 60, 50, 0, 360 * Math.PI);
+        context.strokeStyle = '#ccc';
+        context.lineWidth = 5;
+        context.stroke()
+        context.closePath();
+
+        context.beginPath();
+        context.arc(60, 60, 50, 130, 190 * Math.PI / 180);
+        context.strokeStyle = 'red';
+        context.lineWidth = 5;
+        context.stroke()
+        context.closePath();
+
+
+        var a = document.getElementById('a');
+        var context = a.getContext('2d');
+        context.beginPath();
+        context.arc(60, 60, 50, 0, 360 * Math.PI / 180);
+        context.strokeStyle = '#ccc';
+        context.lineWidth = 5;
+        context.stroke()
+        context.closePath();
+
+        context.beginPath();
+        context.arc(60, 60, 50, 0 * Math.PI / 180, 150 * Math.PI / 180);
+        context.rotate(90 * Math.PI / 180);
+        context.strokeStyle = 'red';
+        context.lineWidth = 5;
+        context.stroke()
+        context.closePath();
+    </script>
+</body>
+
+</html>

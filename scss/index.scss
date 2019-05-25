@@ -1,0 +1,77 @@
+$wi:37.5px;
+@function rem($px) {
+    @return $px/$wi*1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    height: rem(350px);
+    display: flex;
+    flex-direction: column;
+    .nav {
+        height: rem(50px);
+        background: red;
+    }
+    .ban {
+        height: rem(200px);
+        background: firebrick;
+    }
+    .dldtdd {
+        height: rem(150px);
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        dl {
+            height: rem(100px);
+            dt {
+                width: rem(60px);
+                height: rem(60px);
+                background: paleturquoise;
+            }
+            dd {
+                margin-top: rem(10px);
+                font-size: rem(14px);
+            }
+        }
+    }
+}
+
+.cont {
+    flex: 1;
+    overflow-y: auto;
+    .aa {
+        height: rem(200px);
+    }
+    .bb {
+        height: rem(200px);
+    }
+}
+
+.foot {
+    height: rem(50px);
+    background: #ccc;
+    display: flex;
+    justify-content: space-around;
+    span {
+        width: rem(50px);
+        height: rem(50px);
+        line-height: rem(50px);
+    }
+}
